@@ -16,7 +16,7 @@ class BaseRepository
         $record = $this->model->create($data);
 
         return [
-            'message' => 'Record created successfully',
+            'message' => 'Kayıt başarılı',
             'status' => 200,
             'data' => $record
         ];

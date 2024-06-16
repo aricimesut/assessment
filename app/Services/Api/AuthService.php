@@ -37,14 +37,7 @@ class AuthService extends ApiService
             ];
         }
 
-        $user = $this->repository->store($request->all());
-        return [
-            'message' => 'Kayıt başarılı',
-            'status' => 201,
-            'data' => [
-                'user' => $user
-            ]
-        ];
+        return $this->repository->store($request->all());
     }
 
     /**
